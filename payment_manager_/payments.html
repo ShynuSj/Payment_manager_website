@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>payment.st.george</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/371aaf7ac9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="payments">
+        <nav class="navbar">
+
+           
+           
+            <div class="pay-links" id="paylinks">
+                <div class="icon closemenu">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                </div>
+                
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="http://localhost/test/families.php">FAMILIES</a></li>
+                        <li><a href="payments.html">PAYMENTS</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                    </ul>
+                    
+                    <div class="icon openmenu" id="openmenu">
+                        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>       
+            </div>
+            
+            
+        </nav>
+        <h1>Payments Entry</h1> <br>
+        <div class="data-entry">
+            <form action="payments.php" target="_blank">
+                <div class="category">
+                <label for="category">Choose category:</label>
+                <select name="category" id="category">
+                    <option value="monthlypay">Monthly Pay</option>
+                    <option value="kanikka">Kanikka</option>
+                    <option value="kurishadi">Kurishadi</option>
+                    <option value="aution">Auction</option>
+                    <option value="fiest">Fiest / Convention</option>
+                    <option value="holyweek">Holy Week</option>
+                    <option value="christmas">ChristMas</option>
+                    <option value="firstyield">First Yield / Aadhyaphalam</option>
+                    <option value="sundayschool">Sunday School</option>
+                    <option value="missionsunday">Mission Sunday</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="others">Others</option>
+                  </select>
+                  <br><br>
+                    
+                  
+                </div>
+               
+                <div class="pay-col">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="address" placeholder="Address">
+                    <input type="date" name="date" placeholder="Enter Date">
+                    <input type="number" name="amount" placeholder="Amount    Rs">
+                    <button type="submit" class="confirm-btn">Confirm</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+
+                </form>
+                
+
+        </div>
+    </section>
+<script>
+
+    var paylinks = document.getElementById("paylinks");
+    function showMenu(){
+        paylinks.style.right = "0px";
+
+    }
+    function hideMenu(){
+        paylinks.style.left = "-200px";
+        
+    }
+
+</script>    
+
+</body>
+
+</html>

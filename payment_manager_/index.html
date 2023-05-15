@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>St.George</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/371aaf7ac9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar">
+           
+            <a href="index.html"><img src="images/logo.png" height="80%" width="80%" ></a>
+            <div class="nav-links" id="navlinks">
+                <div class="icon closemenu">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                </div>
+                
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="http://localhost/test/families.php">FAMILIES</a></li>
+                        <li><a href="payments.html">PAYMENTS</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                    </ul>
+                    
+                    <div class="icon openmenu" id="openmenu">
+                        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>       
+            </div>
+            
+            
+            
+            
+            
+        </nav>
+        <div class="text_box">
+            <h1>HE IS WATCHING YOU</h1> <br>
+            <h3>The eyes of the Lord are everywhere, keeping watch on the wicked and the good</h3><br>
+            <h5>proverbs 15:3</h5>
+
+        </div>
+
+    </section>
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0px";
+
+    }
+    function hideMenu(){
+        navlinks.style.left = "-200px";
+        
+    }
+
+
+</script>    
+
+</body>
+
+</html>
